@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-size: 100%;    
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background:rgb(26, 24, 24);
+}
+.cabecalho-imagem{
+    height: 72px;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 32px;
+
+}
+
+.cabecalho-menu-item{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(105, 201, 204);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.conteudo{
+    margin-bottom: 48px;
+    border-top: 0.1px solid rgb(82, 177, 201);
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(19, 19, 48);
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+.conteudo-principal-escrito-titulo{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    color:rgb(237, 238, 241);
+    margin: -20px auto;
+    padding: 0px 50px;
+}
+.conteudo-principal-escrito-paragrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    font-size: 24px;
+    color: rgb(202, 201, 201);
+    padding: 20px;
+}
+
+.conteudo-principal{
+    margin: 0 auto;
+    padding: 8rem 3rem;
+}
+.galeria-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    counter-reset: grid-counter;
+    margin: 30px auto;
+}
+.titulo-galeria{
+    color: white;
+    font-size: 48px;
+    padding: -20% auto;
+    margin: 0 auto;
+}
+.descricao-galeria{
+    color: lightblue;
+    font-size: 28px;
+    text-align: center;
+    padding: 105px auto;
+}
+.conteudo-secundario{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid rgb(82, 177, 201);
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+    color:rgb(5, 13, 49);
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    font-size: 18px;
+    color:rgb(5, 13, 49);
+    padding: 100px 200px;
+    text-align: center;
+}
+
+
+
+/* CSS DO FORMULARIO*/
+
+.fale-conosco{
+    display: grid;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(255, 255, 255);
+    padding:100px;
+    
+}
+
+#titulo{
+    font-family: 'Roboto', sans-serif;
+    color:rgb(5, 13, 49);
+    margin-left: 7%;
+    padding-top: 0%;
+    font-size: 60px;
+}
+#paragrafo{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(5, 13, 49);
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 20%;
+}
+fieldset{
+    border:0;
+}
+
+input, textarea, button{
+    border-radius: 5px;
+}
+.campo{
+    margin-bottom: 1.2em;
+}
+.campo label{
+    margin-bottom: 0.2em;
+    color:rgb(82, 177, 201);
+    display: block;
+}
+fieldset.grupo.campo{
+    float: left;
+    margin-right: 1em;
+}
+.campo input[type="text"], .campo input[type="email"], .campo textearea{
+    padding: 10px 30px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 2px rgb(255, 255, 255);
+    display: block;
+}
+.campo input: focus, .campo textarea: focus{
+    background: white;
+}
+
+.botao{
+    font-size: 35px;
+    background: rgb(82, 177, 201);
+    border: 0;
+    margin-bottom: 1em;
+    color: rgb(5, 13, 49);
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 1px grey;
+    position: absolute;
+    cursor: pointer;
+}
+
+/* CSS PARA O FOOTER*/
+.rodape{
+    padding: 40px auto;
+    border-top: 0.4px solid rgb(82, 177, 201);
+    display: block;
+    margin: -50px auto;
+    background: rgb(26, 24, 24);
+}
+.rodape-imagem{
+    display: grid;
+    align-items: inherit;
+    margin: 20px 60px;
+    padding-left: -70% auto;
+}
+.titulo-redes-sociais{
+    width: 100%;
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 0 auto;
+    color:rgb(82, 177, 201);
+}
+.redes-sociais{
+    width: 100%;
+    text-align: center;
+    font-size: 0.7em;
+    list-style-type: none;
+    display: inline;
+}
+.redes-sociais ul li{
+    list-style-type: none;
+    display: inline;
+    padding-inline-start: 30px;
+}
+.copyright{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
